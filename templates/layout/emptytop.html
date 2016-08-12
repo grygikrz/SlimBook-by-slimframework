@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -36,26 +37,25 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            
             <b>Clean-Note</b>
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-      <div class="col-md-5 col-sm-4">         
-       <form class="navbar-form">
-          <div class="form-group" style="display:inline;">
-            <div class="input-group" style="display:table;">
-              <input class="form-control" name="search" placeholder="Search..." autocomplete="off" type="text">
-              <span class="input-group-addon" style="width:1%;">
-                <span class="glyphicon glyphicon-search"></span>
-              </span>
-            </div>
-          </div>
-        </form>
-      </div>        
+			<div class="col-md-5 col-sm-4">         
+			 <form class="navbar-form">
+			    <div class="form-group" style="display:inline;">
+			      <div class="input-group" style="display:table;">
+			        <input class="form-control" name="search" placeholder="Search..." autocomplete="off" type="text">
+			        <span class="input-group-addon" style="width:1%;">
+			          <span class="glyphicon glyphicon-search"></span>
+			        </span>
+			      </div>
+			    </div>
+			  </form>
+			</div>        
       <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a href="{{ path_for('profile') }}">
+        <li class="active">
+          <a href="profile.html">
             Hillary McBrewk
             <img src="img/Friends/woman-1.jpg" class="img-nav">
           </a>
@@ -88,78 +88,70 @@
         </div>
       </div>
     </nav>
-    <div class="row text-center cover-container">
-      <a href="#">
-        <img src="img/Friends/woman-1.jpg">
-      </a>
-      <h1 class="profile-name">Hillary McBrewk</h1>
-      <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
-    </div>
-
-                  {% block content %}{% endblock %}
+                      {% block content %}{% endblock %}
 
 
-        <!-- Online users sidebar content-->
+    <!-- Online users sidebar content-->
     <div class="chat-sidebar focus">
       <div class="list-group text-left">
         <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p> 
         <p class="text-center chat-title">Online users</p>  
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/guy-2.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Jeferh Smith</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-times-circle absent-status"></i>
           <img src="img/Friends/woman-1.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Dapibus acatar</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/guy-3.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Antony andrew lobghi</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/woman-2.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Maria fernanda coronel</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/guy-4.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Markton contz</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-times-circle absent-status"></i>
           <img src="img/Friends/woman-3.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Martha creaw</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-times-circle absent-status"></i>
           <img src="img/Friends/woman-8.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Yira Cartmen</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/woman-4.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Jhoanath matew</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/woman-5.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Ryanah Haywofd</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/woman-9.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Linda palma</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/woman-10.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Andrea ramos</span>
         </a>
-        <a href="{{ path_for('messages') }}" class="list-group-item">
+        <a href="messages.html" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/child-1.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Dora ty bluekl</span>
@@ -171,11 +163,11 @@
       <div class="container">
         <p>
           <div class="footer-links">
-            <a href="{{ path_for('messages') }}">Terms of Use</a> | 
-            <a href="{{ path_for('messages') }}">Privacy Policy</a> | 
-            <a href="{{ path_for('messages') }}">Developers</a> | 
-            <a href="{{ path_for('messages') }}">Contact</a> | 
-            <a href="{{ path_for('about') }}">About</a>
+            <a href="#">Terms of Use</a> | 
+            <a href="#">Privacy Policy</a> | 
+            <a href="#">Developers</a> | 
+            <a href="#">Contact</a> | 
+            <a href="#">About</a>
           </div>   
           Copyright &copy; Company - All rights reserved       
         </p>

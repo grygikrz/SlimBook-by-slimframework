@@ -21,7 +21,7 @@ $app->get('/recover_password', function ($request, $response, $args) {
 
 $app->get('/list_users', function ($request, $response, $args) {
     $this->logger->info("list_users '/list_users' route");
-    return $this->view->render($response, 'list_users.html',['name' => $args['name']]);
+    return $this->view->render($response, 'list_users.html',['name' => 'content here']);
 })->setName('list_users');
 
 

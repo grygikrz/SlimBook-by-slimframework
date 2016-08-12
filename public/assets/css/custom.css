@@ -1,0 +1,42 @@
+.cover-container {
+    background-image: url("./../../img/profile-cover.jpg");
+}
+
+.navbar-principal {
+    background-color: #3c3c3c;
+    border-color: #808080;
+ }
+
+ .navbar-principal a i {
+    margin-right: 10px;
+}
+
+.navbar-principal .navbar-nav .open a, .navbar-principal .navbar-nav .open a:hover, .navbar-principal .navbar-nav li a:hover, .navbar-principal .navbar-nav li a:focus, .navbar-principal .navbar-nav .active a, .navbar-principal .navbar-nav .active a:hover {
+    background: rgb(60, 60, 60);
+}
+
+.navbar-nav>li>.dropdown-menu {
+    background-color: #015c91;
+}
+
+.panel-info>.panel-heading {
+    color: #ffffff;
+    background-color: #016da5;
+}
+
+.btn-info {
+    background-color: #3c3c3c;
+        border-color: initial;
+}
+
+.nav>li>a>img {
+    margin-left: 10px;
+}
+
+.color-container {
+    background-image: url("./../../img/profile-cover.jpg");
+}
+
+.profile-nav .user-heading {
+    background-image: url("./../../img/profile-cover.jpg");
+    }

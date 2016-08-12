@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+    <title>{% block title %}{% endblock %} - Slimbook</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/animate.min.css" rel="stylesheet">
+    <link href="font-awesome-4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/timeline.css" rel="stylesheet">
+    <link href="assets/css/recover_password.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <script src="assets/js/jquery.1.11.1.min.js"></script>
+    <script src="bootstrap-3.3.5/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="animated fadeIn">
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-principal">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <b>Clean-Note</b>
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+			<div class="col-md-5 col-sm-4">         
+			 <form class="navbar-form">
+			    <div class="form-group" style="display:inline;">
+			      <div class="input-group" style="display:table;">
+			        <input class="form-control" name="search" placeholder="Search..." autocomplete="off" type="text">
+			        <span class="input-group-addon" style="width:1%;">
+			          <span class="glyphicon glyphicon-search"></span>
+			        </span>
+			      </div>
+			    </div>
+			  </form>
+			</div>        
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active">
+          <a href="profile.html">
+            Hillary McBrewk
+            <img src="img/Friends/woman-1.jpg" class="img-nav">
+          </a>
+        </li>
+        <li class="active"><a href="{{ path_for('home') }}"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
+        <li><a href="{{ path_for('messages') }}"><i class="fa fa-comments"></i></a></li>
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  Pages 
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="{{ path_for('recover_password') }}">Recover password</a></li>
+              <li><a href="{{ path_for('list_users') }}">List users</a></li>
+              <li><a href="{{ path_for('photos') }}">Photos</a></li>
+              <li><a href="{{ path_for('friends') }}">Friends</a></li>
+              <li><a href="{{ path_for('people_directory') }}">User directory</a></li>
+              <li><a href="{{ path_for('about') }}">About</a></li>
+              <li><a href="{{ path_for('edit_profile') }}">Edit profile</a></li>
+              <li><a href="{{ path_for('notifications') }}">Notifications</a></li>
+              <li><a href="{{ path_for('blank-cover') }}">Blank cover</a></li>
+              
+              <li><a href="{{ path_for('registration_email') }}">Registration email</a></li>
+              <li><a href="{{ path_for('grid_posts') }}">Grid posts</a></li>
+              <li><a href="{{ path_for('error404') }}">Error 404</a></li>
+              <li><a href="{{ path_for('error500') }}">Error 500</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>       
+      </ul>
+        </div>
+      </div>
+    </nav>
+
+                      {% block content %}{% endblock %}
