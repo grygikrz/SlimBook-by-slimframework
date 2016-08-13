@@ -3,6 +3,9 @@
 {% block title %}Home{% endblock %}
 {% block content %}
 
+
+{% foreach user in users %}
+
     <!-- Timeline content -->
     <div class="container" style="margin-top:50px;">
       <div class="row">
@@ -11,7 +14,7 @@
             <div class="panel">
                 <div class="user-heading round">
                     <a href="#">
-                        <img src="img/Friends/woman-1.jpg" alt="">
+                        <img src="{{ user.photo }}" alt="">
                     </a>
                     <h1>Hillary McBrewk</h1>
                     <p>jsmith@grones.com</p>
@@ -89,4 +92,5 @@
       </div>
       </div>
     </div><!--End Timeline content -->
+     {% endforeach %}
  {% endblock %}
