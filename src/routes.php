@@ -7,10 +7,8 @@ $app->get('/', function ($request, $response, $args) {
 })->setName('index');
 
 
-$app->get('/home', function ($request, $response, $args) {
-    $this->logger->info("home '/' route");
-    return $this->view->render($response, 'home.html', $args);
-})->setName('home');
+$app->get('/home','App\Controllers\HomeController:index')->setName('homepage');
+
 
 
 $app->get('/recover_password', function ($request, $response, $args) {
