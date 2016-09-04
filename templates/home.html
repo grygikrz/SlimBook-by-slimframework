@@ -2,10 +2,7 @@
 
 {% block title %}Home{% endblock %}
 {% block content %}
-<br>
-<br>
-{{widgets}}
-<br><br>
+
     <!-- Timeline content -->
     <div class="container">
     	<div class="col-md-10 no-paddin-xs">
@@ -180,6 +177,7 @@
 				      </ul>
 				  </div>
 				</div>
+				{%for post in posts%}
 		        <!-- first post-->
 				<div class="panel panel-white post panel-shadow">
 				  <div class="post-heading">
@@ -189,31 +187,33 @@
 				      <div class="pull-left meta">
 				          <div class="title h5">
 				              <a href="#" class="post-user-name">Omarion welkdic</a>
-				              uploaded a photo.
+				              {{post.type}}
 				          </div>
 				          <h6 class="text-muted time">5 seconds ago</h6>
 				      </div>
 				  </div>
 				  <div class="post-image">
-				      <img src="img/Post/game.jpg" class="image show-in-modal" alt="image post">
+				      <img src="{{post.image}}" class="image show-in-modal" alt="image post">
 				  </div>
 				  <div class="post-description">
-				      <p>This is a short description</p>
+				      <p>{{post.message}}</p>
 				      <div class="stats">
 				          <a href="#" class="stat-item">
-				              <i class="fa fa-thumbs-up icon"></i>228
+				              <i class="fa fa-thumbs-up icon"></i>{{post.likes}}
 				          </a>
 				          <a href="#" class="stat-item">
-				              <i class="fa fa-retweet icon"></i>128
+				              <i class="fa fa-retweet icon"></i>{{post.shares}}
 				          </a>
 				          <a href="#" class="stat-item">
-				              <i class="fa fa-comments-o icon"></i>3
+				              <i class="fa fa-comments-o icon"></i>{{post.comments}}
 				          </a>
 				      </div>
 				  </div>
 				  <div class="post-footer">
 				      <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
+				      {% if post.comments != 0 %}
 				      <ul class="comments-list">
+				      {% for comment in comments %}
 				          <li class="comment">
 				              <a class="pull-left" href="#">
 				                  <img class="avatar" src="img/Friends/guy-3.jpg" alt="avatar">
@@ -223,9 +223,10 @@
 				                      <h4 class="comment-user-name"><a href="#">Antony andrew lobghi</a></h4>
 				                      <h5 class="time">7 minutes ago</h5>
 				                  </div>
-				                  <p>This is a comment bla bla bla</p>
+				                  <p>{{comment.message}}</p>
 				              </div>
 				          </li>
+				        {% endfor %}
 				          <li class="comment">
 				              <a class="pull-left" href="#">
 				                  <img class="avatar" src="img/Friends/guy-2.jpg" alt="avatar">
@@ -251,8 +252,10 @@
 				              </div>
 				          </li>
 				      </ul>
+				      {% endif %}
 				  </div>
 				</div><!-- first post-->
+				{%endfor%}
 		        <!-- second post -->
 				<div class="panel panel-white post panel-shadow">
 				  <div class="post-heading">
