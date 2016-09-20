@@ -9,13 +9,13 @@ $container = $app->getContainer();
 //    return new Slim\Views\Twig($settings['template_path']);
 //};
 
-$container['view'] = function ($container) {
-	$settings = $container->get('settings')['renderer'];
+$container['view'] = function ($c) {
+	$settings = $c->get('settings')['renderer'];
     $view = new \Slim\Views\Twig($settings['template_path']);
 
     $view->addExtension(new \Slim\Views\TwigExtension(
-        $container['router'],
-        $container['request']->getUri()
+        $c['router'],
+        $c['request']->getUri()
     ));
 
     return $view;
@@ -45,25 +45,27 @@ $container['logger'] = function ($c) {
 
 
 // Init eloquent
+$capsule = new \Illuminate\Database\Capsule\Manager;
+$capsule->addConnection($container['settings']['db']);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
+
 $container['db'] = function ($container) {
-
-    $capsule = new \Illuminate\Database\Capsule\Manager;
-    $capsule->addConnection($container['settings']['db']);
-
-    $capsule->setAsGlobal();
-    $capsule->bootEloquent();
-
     return $capsule;
+};
+
+//flash message
+$container['flash'] = function ($c) {
+    return new \Slim\Flash\Messages();
 };
 
 $container[App\Controllers\HomeController::class] = function ($c) {
 
     $view = $c->get('view');
     $logger = $c->get('logger');
-    $db = $c->get('db');
+    $flash = $c->get('flash');
 
-    return new App\Controllers\HomeController($view, $logger, $db);
+    return new App\Controllers\HomeController($view, $logger, $flash);
 
     };
-
 

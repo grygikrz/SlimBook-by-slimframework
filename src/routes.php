@@ -9,7 +9,7 @@ $app->get('/', function ($request, $response, $args) {
 
 $app->get('/home','App\Controllers\HomeController:index')->setName('homepage');
 
-
+$app->post('/home/store','App\Controllers\HomeController:store');
 
 $app->get('/recover_password', function ($request, $response, $args) {
     $this->logger->info("recover_password '/recover_password' route");
