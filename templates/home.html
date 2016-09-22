@@ -28,27 +28,15 @@
 				    <h3 class="panel-title">Friends activity</h3>
 				  </div>
 				  <div class="panel-body">
+					{% for activity in friendAct %}
 					<div class="notification-row">
 						<div class="notification-padding">
 							<div class="sidebar-fa-image">
-								<img class="notifications" src="img/Friends/guy-2.jpg">
+								<img class="notifications" src="{{ activity.photo }}">
 							</div>
 							<div class="sidebar-fa-text">
-								<b><a href="#">Carlos marthur</a></b> reviewed a 
-								<b><a href="#">publication</a></b>. 
-								<span class="timeago" >5 days ago</span>
-							</div>
-						</div>
-					</div>
-					{% for m in messages %}
-					<div class="notification-row">
-						<div class="notification-padding">
-							<div class="sidebar-fa-image">
-								<img class="notifications" src="img/Friends/woman-2.jpg">
-							</div>
-							<div class="sidebar-fa-text">
-								<b><a href="#">Hillary Markston</a></b> shared a 
-								<b><a href="#">publication</a></b>. 
+								<b><a href="#">{{ activity.first_name }} {{ activity.last_name }}</a></b> has 
+								<b><a href="#">{{ activity.type }}</a></b>. 
 								<span class="timeago" >5 min ago</span>
 							</div>
 						</div>

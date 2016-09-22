@@ -7,9 +7,12 @@ $app->get('/', function ($request, $response, $args) {
 })->setName('index');
 
 
-$app->get('/home','App\Controllers\HomeController:index')->setName('homepage');
+$app->get('/home','App\Controllers\HomeController:index')->setName('Homepage');
 
 $app->post('/home/store','App\Controllers\HomeController:store');
+
+$app->get('/friends', 'App\Controllers\FriendsController:index')->setName('Friends');
+
 
 $app->get('/recover_password', function ($request, $response, $args) {
     $this->logger->info("recover_password '/recover_password' route");
@@ -27,12 +30,6 @@ $app->get('/photos', function ($request, $response, $args) {
     $this->logger->info("photos '/photos' route");
     return $this->view->render($response, 'photos.html', $args);
 })->setName('photos');
-
-
-$app->get('/friends', function ($request, $response, $args) {
-    $this->logger->info("friends '/friends' route");
-    return $this->view->render($response, 'friends.html', $args);
-})->setName('friends');
 
 
 $app->get('/people_directory', function ($request, $response, $args) {

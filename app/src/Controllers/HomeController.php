@@ -27,13 +27,16 @@ class HomeController
            
         $comAndPost = \App\Models\Posts::with('users.comments.users')->get();
 
-        
+        $id = 2;
+        $friendAct = \App\Models\Posts::with('users')->join('users', 'users.id', '=', 'posts.user_id')->join('friends', 'friends.user_id', '=', 'users.id')->where('friends.user_id', '!=', $id)->get();
+
         $messages = $this->flash->getMessages();
 
-        $this->logger->info("Home page action dispatched");
+        $this->logger->info("Home page action");
 
         $this->view->render($response, 'home.html', [
             'comAndPost' => $comAndPost,
+            'friendAct' => $friendAct,
             'messages' => $messages
         ]);
 

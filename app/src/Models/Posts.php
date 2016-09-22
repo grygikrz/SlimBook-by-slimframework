@@ -14,17 +14,23 @@ class Posts extends Eloquent
 		public $timestamps = false;
 
 	    
-	    public function comments()
+	public function comments()
     {
 
         return $this->hasMany('\App\Models\Comments', 'post_id','id');
 
     }
-    	    public function users()
+    public function users()
     {
 
         return $this->hasMany('\App\Models\Users','id','user_id');
 
     }
 
+    public function friends()
+    {
+
+        return $this->belongsTo('\App\Models\Friends', 'friend_id', 'id');
+
+    }
 }

@@ -21,10 +21,17 @@ class Users extends Eloquent
 
     
 
-    	    public function comments()
+    public function comments()
     {
 
         return $this->hasMany('\App\Models\Comments', 'user_id', 'id');
+
+    }
+
+    public function friends()
+    {
+
+        return $this->hasMany('\App\Models\Friends', 'friend_id', 'id');
 
     }
 

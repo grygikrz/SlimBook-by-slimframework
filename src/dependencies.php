@@ -69,3 +69,12 @@ $container[App\Controllers\HomeController::class] = function ($c) {
 
     };
 
+$container[App\Controllers\FriendsController::class] = function ($c) {
+
+    $view = $c->get('view');
+    $logger = $c->get('logger');
+    $flash = $c->get('flash');
+
+    return new App\Controllers\FriendsController($view, $logger, $flash);
+
+    };

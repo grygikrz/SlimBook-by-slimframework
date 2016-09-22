@@ -1,6 +1,6 @@
 {% extends "layout/base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Friends{% endblock %}
 {% block content %}
 
 
@@ -12,9 +12,10 @@
           <div class="row">
               <div class="col-md-10 col-md-offset-1 animated fadeInRight">
                   <div class="row">
+                  {% for friend in friends %}
                       <div class="col-sm-4 margin40">
                           <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-2.jpg" class="img-responsive" alt="workimg">
+                              <img src="{{ friend.users.photo }}" class="img-responsive" alt="workimg">
                               <div class="item-img-overlay">
                                   <a href="profile.html">
                                       <span></span>
@@ -22,86 +23,16 @@
                               </div>
                           </div> 
                           <div class="work-desc">
-                              <h3><a> John Doe</a></h3>
+                              <h3><a> {{ friend.users.first_name }} {{ friend.users.last_name }}</a></h3>
                               <span>Ceo, Assan inc.</span>
                           </div><!--work desc-->
                       </div><!--speakers col end-->
-                      <div class="col-sm-4 margin40">
-                          <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-3.jpg" class="img-responsive" alt="workimg">
-                              <div class="item-img-overlay">
-                                  <a href="profile.html">
-                                      <span></span>
-                                  </a>
-                              </div>
-                          </div> 
-                          <div class="work-desc">
-                              <h3><a> John Doe</a></h3>
-                              <span>Ceo, Assan inc.</span>
-                          </div><!--work desc-->
-                      </div><!--speakers col end-->
-                      <div class="col-sm-4 margin40">
-                          <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-4.jpg" class="img-responsive" alt="workimg">
-                              <div class="item-img-overlay">
-                                  <a href="profile.html">
-                                      <span></span>
-                                  </a>
-                              </div>
-                          </div> 
-                          <div class="work-desc">
-                              <h3><a> Smith</a></h3>
-                              <span>Manager, Assan inc.</span>
-                          </div><!--work desc-->
-                      </div><!--speakers col end-->
-                  </div><!--speakers row end-->
-                  <div class="row">
-                      <div class="col-sm-4 margin40">
-                          <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-5.jpg" class="img-responsive" alt="workimg">
-                              <div class="item-img-overlay">
-                                  <a href="profile.html">
-                                      <span></span>
-                                  </a>
-                              </div>
-                          </div> 
-                          <div class="work-desc">
-                              <h3><a> John Doe</a></h3>
-                              <span>Ceo, Assan inc.</span>
-                          </div><!--work desc-->
-                      </div><!--speakers col end-->
-                      <div class="col-sm-4 margin40">
-                          <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-6.jpg" class="img-responsive" alt="workimg">
-                              <div class="item-img-overlay">
-                                  <a href="profile.html">
-                                      <span></span>
-                                  </a>
-                              </div>
-                          </div> 
-                          <div class="work-desc">
-                              <h3><a> John Doe</a></h3>
-                              <span>Ceo, Assan inc.</span>
-                          </div><!--work desc-->
-                      </div><!--speakers col end-->
-                      <div class="col-sm-4 margin40">
-                          <div class="item-img-wrap ">
-                              <img src="img/Friends/woman-7.jpg" class="img-responsive" alt="workimg">
-                              <div class="item-img-overlay">
-                                  <a href="profile.html">
-                                      <span></span>
-                                  </a>
-                              </div>
-                          </div> 
-                          <div class="work-desc">
-                              <h3><a> Smith</a></h3>
-                              <span>Manager, Assan inc.</span>
-                          </div><!--work desc-->
-                      </div><!--speakers col end-->
-                  </div><!--speakers row end-->
+                    {% endfor %}
               </div>
           </div>
         </div>
       </div>
     </div><!-- end timeline content-->
+
+
  {% endblock %}
