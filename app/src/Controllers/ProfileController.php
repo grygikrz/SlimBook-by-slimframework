@@ -25,10 +25,8 @@ class HomeController
     public function index(Request $request, Response $response, $args)
     {
 
-        $comAndPost = \App\Models\Posts::with('users.comments.users')->orderBy('date', 'desc')->get();
-
         $id = 2;
-        $friendAct = \App\Models\Posts::with('users')->join('users', 'users.id', '=', 'posts.user_id')->join('friends', 'friends.user_id', '=', 'users.id')->where('friends.user_id', '!=', $id)->get();
+        $comAndPost = \App\Models\Posts::with('users.comments.users')where('user_id', '!=', $id)->orderBy('date', 'desc')->get();
 
         $messages = $this->flash->getMessages();
 
@@ -36,7 +34,6 @@ class HomeController
 
         $this->view->render($response, 'home.html', [
             'comAndPost' => $comAndPost,
-            'friendAct' => $friendAct,
             'messages' => $messages
         ]);
 

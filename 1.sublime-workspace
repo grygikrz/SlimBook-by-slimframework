@@ -1,0 +1,600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"co",
+				"comments"
+			],
+			[
+				"Posts",
+				"posts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/src/Controllers/FriendsController.php",
+			"settings":
+			{
+				"buffer_size": 893,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nBoxy Theme\n----------\n\n  👓 Version 5.1.0\n  ===========================================================================\n  \n  💅 Themes\n  -------------------\n  \n  ↪ add `zz File Icons` 2.1.0 support\n\n  👓 Version 5.0.0\n  ===========================================================================\n  \n  Starting 5.0.0 Boxy uses zz File Icons package to display file icons.\n  Check it out: https://packagecontrol.io/packages/zz%20File%20Icons﻿\n  \n  💅 Themes\n  -------------------\n  \n  ↪ add `zz File Icons` support\n  ↪ add Boxy Nova theme\n  ↪ add minimal skin\n  ↪ add settings to change the minimap viewport opacity\n  \n  💅 Color Schemes\n  -------------------\n  \n  ↪ Add nova color scheme\n  \n  👍 Many thanks to\n  -------------------\n  \n  [@mattst](https://github.com/mattst) for 002e3a7 😉\n\n  👓 Version 4.0.0\n  ===========================================================================\n  \n  Starting 4.0.0 `Presets` command is replaced by `Skins` package.\n  Check it out: https://packagecontrol.io/packages/Skins﻿\n  \n  💅 Themes\n  -------------------\n  \n  ↪ Fix activation of the extras\n  ↪ Fix addon unloading\n  ↪ Fix behavior when `dirty` accent not working\n  ↪ Disable tab set line for mono accent\n  ↪ Reduce scrollbar padding\n  ↪ Fix tab height when `theme_tabset_line_visible`\n  ↪ Fix tab set line conflict with `theme_bar_margin` opts\n  ↪ Add `Skins` support\n  ↪ Add gear icon for *.ini syntax\n  ↪ Add new and review existing skins\n  ↪ Add numix accent\n  ↪ Add option for quick panel border\n  ↪ Add option to always use accent color for the dirty state\n  ↪ Add overlined variant of the tabs\n  ↪ Add solarized dark theme\n  ↪ Add solarized light theme\n  ↪ Add tab set line option\n  \n  💅 Color Schemes\n  -------------------\n  \n  ↪ Add solarized dark color scheme\n  ↪ Add solarized light color scheme\n  \n  👍 Many thanks to\n  -------------------\n  \n  [@mattst](https://github.com/mattst) for d73c7f1 😉\n",
+			"settings":
+			{
+				"buffer_size": 1946,
+				"line_ending": "Unix",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Context",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Watch",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix",
+				"name": "Xdebug Stack",
+				"read_only": true,
+				"scratch": true
+			}
+		},
+		{
+			"contents": "=> /home/thrax/Documents/deb.dev/public_html/slimbook/app/src/Controllers/HomeController.php\n\t|+| 12\n",
+			"settings":
+			{
+				"buffer_size": 101,
+				"line_ending": "Unix",
+				"name": "Xdebug Breakpoint",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 340.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 153.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/thrax/Documents/deb.dev/public_html/slimbook",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/app",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/app/src",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/app/src/Controllers",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/public"
+	],
+	"file_history":
+	[
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/app/src/Controllers/HomeController.php",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/public/index.php",
+		"/home/thrax/.config/sublime-text-3/Packages/Xdebug Client/Xdebug.sublime-settings",
+		"/home/thrax/.config/sublime-text-3/Packages/User/Xdebug.sublime-settings",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/1.sublime-project",
+		"/home/thrax/.config/sublime-text-3/Packages/User/Package Control.sublime-settings",
+		"/home/thrax/Desktop/bbb/untitled.sublime-project",
+		"/home/thrax/Desktop/untitled.sublime-project",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/app/src/Controllers/FriendsController.php",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/src/controllers/HomeController.php",
+		"/home/thrax/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/thrax/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/layout/middletop.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/home.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/list_users.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/src/routes.php",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/layout/base.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/index.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/layout/base-private-user.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/Untitled Folder/base.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/public/css/custom.css",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/blank.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/buttons.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/forms.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/grid.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/pricing.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/progress.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/tables.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-public-blank.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-private-messages.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-private-profile.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-private-timeline.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-private-users.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-public-profile.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-public-timeline.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-public-users.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/user-private-blank.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/icons.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/public/css/purple.min.css",
+		"/home/thrax/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/about.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/contact.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/profile.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/userwall.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/templates/base.html",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/composer.json",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/public/.htaccess",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/vendor/autoload.php",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/src/middleware.php",
+		"/home/thrax/Documents/deb.dev/public_html/slimbook/src/dependencies.php",
+		"/home/thrax/Documents/deb.dev/public_html/social/logs/app.log",
+		"/home/thrax/.config/sublime-text-3/Packages/User/JSON.sublime-settings",
+		"/home/thrax/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/thrax/.config/sublime-text-3/Packages/Package Control/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"form"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/src/Controllers/FriendsController.php",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 893,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								420,
+								420
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1946,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								246,
+								246
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 5,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								101,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 44.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				2,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			],
+			[
+				1,
+				1,
+				2,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.5,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.7,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.xdebug":
+	{
+		"height": 118.0
+	},
+	"pinned_build_system": "",
+	"project": "1.sublime-project",
+	"replace":
+	{
+		"height": 60.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+		"xdebug":
+		{
+			"hide_conflict": false,
+			"restore_index":
+			{
+				"65":
+				{
+					"group": 0,
+					"index": 0
+				}
+			},
+			"restore_layout":
+			{
+				"cells":
+				[
+					[
+						0,
+						0,
+						2,
+						1
+					],
+					[
+						0,
+						1,
+						1,
+						2
+					],
+					[
+						1,
+						1,
+						2,
+						2
+					]
+				],
+				"cols":
+				[
+					0.0,
+					0.532520325203,
+					1.0
+				],
+				"rows":
+				[
+					0.0,
+					0.629116684841,
+					1.0
+				]
+			}
+		}
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 363.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

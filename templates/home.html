@@ -35,13 +35,13 @@
 								<img class="notifications" src="{{ activity.photo }}">
 							</div>
 							<div class="sidebar-fa-text">
-								<b><a href="#">{{ activity.first_name }} {{ activity.last_name }}</a></b> has 
-								<b><a href="#">{{ activity.type }}</a></b>. 
+								<b><a href="#">{{ activity.first_name }} {{ activity.last_name }}</a></b> has
+								<b><a href="#">{{ activity.type }}</a></b>.
 								<span class="timeago" >5 min ago</span>
 							</div>
 						</div>
 					</div>
-					{% endfor %}			
+					{% endfor %}
 				  </div>
     			</div><!-- End Friends activity -->
 
@@ -64,7 +64,7 @@
 				                        <div class="col-xs-6">
 				                           Carlos marthur
 				                        </div>
-				            
+
 				                        <div class="col-xs-3 text-right">
 				                            <btn class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></btn>
 				                        </div>
@@ -80,7 +80,7 @@
 				                        <div class="col-xs-6">
 				                            Maria gustami
 				                        </div>
-				            
+
 				                        <div class="col-xs-3 text-right">
 				                            <btn class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></btn>
 				                        </div>
@@ -96,7 +96,7 @@
 				                        <div class="col-xs-6">
 				                            Angellina mcblown
 				                        </div>
-				            
+
 				                        <div class="col-xs-3 text-right">
 				                            <btn class="btn btn-sm btn-warning btn-icon"><i class="fa fa-user-plus"></i></btn>
 				                        </div>
@@ -104,9 +104,9 @@
 				                </li>
 				            </ul>
 				        </div>
-				    </div>						
+				    </div>
 				  </div>
-				</div><!-- End people yout may know -->											 			      
+				</div><!-- End people yout may know -->
 			  </div><!-- end left content-->
 			  <!-- right  content-->
 			  <div class="profile-info col-md-8  animated fadeInRight">
@@ -168,8 +168,9 @@
 				      </div>
 				  </div>
 				  <div class="post-footer">
-				      <input class="form-control add-comment-input" placeholder="Add a comment..." type="text">
-
+              <form action="./home/store_comment" method="POST">
+				            <input name="compost[{{post.id}}]" class="form-control add-comment-input" placeholder="Add a comment..." type="text"><button type="submit" class="btn btn-info">Post Comment</button>
+              </form>
 				      <ul class="comments-list">
 				      {% for c in post.comments %}
 				          <li class="comment">
@@ -193,7 +194,7 @@
 						<button class="btn btn-info">
 							<i class="fa fa-refresh"></i>Load More...
 						</button>
-					</div>			      
+					</div>
 			  </div><!--end right  content-->
 			</div>
     	</div>

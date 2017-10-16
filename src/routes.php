@@ -11,6 +11,8 @@ $app->get('/home','App\Controllers\HomeController:index')->setName('Homepage');
 
 $app->post('/home/store','App\Controllers\HomeController:store');
 
+$app->post('/home/store_comment','App\Controllers\HomeController:store_comment');
+
 $app->get('/friends', 'App\Controllers\FriendsController:index')->setName('Friends');
 
 

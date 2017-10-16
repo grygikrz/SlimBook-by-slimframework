@@ -1,0 +1,15 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/thrax/Documents/deb.dev/public_html/slimbook"
+		}
+	],
+	"settings":
+	{
+		"xdebug":
+		{
+			"url": "http://deb.dev/slimbook/public/home"
+		}
+	}
+}
