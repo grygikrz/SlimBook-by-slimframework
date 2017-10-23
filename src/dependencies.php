@@ -1,4 +1,6 @@
 <?php
+use \App\Controllers\RegistrationController;
+
 // DIC configuration
 
 $container = $app->getContainer();
@@ -78,3 +80,13 @@ $container[App\Controllers\FriendsController::class] = function ($c) {
     return new App\Controllers\FriendsController($view, $logger, $flash);
 
     };
+
+$container[App\Controllers\ProfileController::class] = function ($c) {
+
+		 $view = $c->get('view');
+		 $logger = $c->get('logger');
+		 $flash = $c->get('flash');
+
+		 return new App\Controllers\ProfileController($view, $logger, $flash);
+
+		 };

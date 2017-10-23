@@ -8,13 +8,14 @@ $app->get('/', function ($request, $response, $args) {
 
 
 $app->get('/home','App\Controllers\HomeController:index')->setName('Homepage');
-
 $app->post('/home/store','App\Controllers\HomeController:store');
-
 $app->post('/home/store_comment','App\Controllers\HomeController:store_comment');
 
 $app->get('/friends', 'App\Controllers\FriendsController:index')->setName('Friends');
 
+$app->get('/profile', 'App\Controllers\ProfileController:index')->setName('profile');
+$app->post('/profile/store','App\Controllers\ProfileController:store');
+$app->post('/profile/store_comment','App\Controllers\ProfileController:store_comment');
 
 $app->get('/recover_password', function ($request, $response, $args) {
     $this->logger->info("recover_password '/recover_password' route");
@@ -87,8 +88,3 @@ $app->get('/messages', function ($request, $response, $args) {
     $this->logger->info("messages '/messages' route");
     return $this->view->render($response, 'messages.html', $args);
 })->setName('messages');
-
-$app->get('/profile', function ($request, $response, $args) {
-    $this->logger->info("profile '/profile' route");
-    return $this->view->render($response, 'profile.html', $args);
-})->setName('profile');

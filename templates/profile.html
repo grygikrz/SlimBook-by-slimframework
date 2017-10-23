@@ -1,6 +1,7 @@
 {% extends "layout/base.html" %}
+{% use "layout/left_content_profile.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Profile{% endblock %}
 {% block content %}
 
 {% for m in messages.alert %}
@@ -22,158 +23,18 @@
     	<div class="col-md-10 no-paddin-xs">
 			<div class="row">
 			<!-- left content-->
-			  <div class="col-md-4">
-				<div class="profile-nav">
-					<div class="panel">
-					  <ul class="nav nav-pills nav-stacked">
-					      <li class="active"><a href="profile.html"> <i class="fa fa-user"></i> Profile</a></li>
-					      <li><a href="about.html"> <i class="fa fa-info-circle"></i> About</a></li>
-					      <li><a href="friends.html"> <i class="fa fa-users"></i> Friends</a></li>
-					      <li><a href="photos.html"> <i class="fa fa-file-image-o"></i> Photos</a></li>
-					      <li><a href="edit_profile.html"> <i class="fa fa-edit"></i> Edit profile</a></li>
-					  </ul>
-					</div>
-				</div>
-				<!-- friends -->
-				<div class="panel panel-white panel-friends">
-					<div class="panel-heading">
-					  <h3 class="panel-title">Friends</h3>
-					</div>
-					<div class="panel-body text-center">
-					  <ul class="friends">
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/woman-4.jpg" title="Jhoanath matew" class="img-responsive tip">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/woman-3.jpg" title="Martha creawn" class="img-responsive tip">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/guy-2.jpg" title="Jeferh smith" class="img-responsive tip">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/woman-9.jpg" title="Linda palma" class="img-responsive tip">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/guy-9.jpg" title="Lindo polmo" class="img-responsive tip">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Friends/guy-5.jpg" title="andrew cartson" class="img-responsive tip">
-					        </a>
-					    </li>
-					  </ul>
-					</div>
-				</div><!-- end friends -->
-				<!-- photos -->
-				<div class="panel panel-white">
-					<div class="panel-heading">
-					  <h3 class="panel-title">Photos</h3>
-					</div>
-					<div class="panel-body text-center">
-					  <ul class="photos">
-					    <li>
-					        <a href="#">
-					          <img src="img/Photos/5.jpg" alt="photo 1" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Photos/2.jpg" alt="photo 2" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Photos/3.jpg" alt="photo 3" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Photos/7.jpg" alt="photo 4" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Photos/5.jpg" alt="photo 5" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					    <li>
-					        <a href="#">
-					            <img src="img/Photos/4.jpg" alt="photo 6" class="img-responsive show-in-modal">
-					        </a>
-					    </li>
-					  </ul>
-					</div>
-				</div><!-- end photos-->
-
-				<!-- groups -->
-				<div class="panel panel-white panel-groups">
-					<div class="panel-heading">
-					  <h3 class="panel-title">Groups</h3>
-					</div>
-					<div class="panel-body">
-					  <ul class="list-group">
-					    <li class="list-group-item">
-					      <div class="col-xs-3 col-sm-6 col-md-3">
-					          <img src="img/Likes/likes-5.png" alt="Group" class="img-responsive img-circle" />
-					      </div>
-					      <div class="col-xs-9 col-sm-6">
-					          <span class="name">Bootdey competitors</span>
-					      </div>
-					      <div class="clearfix"></div>
-					    </li>
-					    <li class="list-group-item">
-					      <div class="col-xs-3 col-sm-6 col-md-3">
-					          <img src="img/Likes/likes-1.png" alt="Group" class="img-responsive img-circle" />
-					      </div>
-					      <div class="col-xs-9 col-sm-6">
-					          <span class="name">Git in action</span>
-					      </div>
-					      <div class="clearfix"></div>
-					    </li>
-					    <li class="list-group-item">
-					      <div class="col-xs-3 col-sm-6 col-md-3">
-					          <img src="img/Likes/likes-6.png" alt="Group" class="img-responsive img-circle" />
-					      </div>
-					      <div class="col-xs-9 col-sm-6">
-					          <span class="name">Bootdey Snippets</span>
-					      </div>
-					      <div class="clearfix"></div>
-					    </li>
-					    <li class="list-group-item">
-					      <div class="col-xs-3 col-sm-6 col-md-3">
-					          <img src="img/Likes/likes-2.png" alt="Group" class="img-responsive img-circle" />
-					      </div>
-					      <div class="col-xs-9 col-sm-6">
-					          <span class="name">Html 5 live</span>
-					      </div>
-					      <div class="clearfix"></div>
-					    </li>
-					  </ul>
-					</div>
-				</div><!-- end groups-->
-			  </div><!-- end left content-->
-
-
-
+      {% block pofile_menu %}{{ parent() }}{% endblock %}
+      <!-- end left content-->
 
 			  <!-- right  content-->
 			  <div class="profile-info col-md-8 animated fadeInRight">
 				<div class="panel">
-				  <form>
-				      <textarea placeholder="Whats in your mind today?" rows="2" class="form-control input-lg p-text-area"></textarea>
-				  </form>
+          <form action="./profile/store" method="POST">
+				      <textarea name="message" placeholder="Whats in your mind today?" rows="2" class="form-control input-lg p-text-area"></textarea>
+
 				  <div class="panel-footer">
-				      <button class="btn btn-info pull-right">Post</button>
+				      <button type="submit" class="btn btn-info pull-right">Post</button>
+				   </form>
 				      <ul class="nav nav-pills">
 				          <li>
 				              <a href="#"><i class="fa fa-map-marker"></i></a>
@@ -225,21 +86,21 @@
 				      </div>
 				  </div>
 				  <div class="post-footer">
-            <form action="./home/store_comment" method="POST">
-				      <input name="compost[{{post.id}}]" class="form-control add-comment-input" placeholder="Add a comment..." type="text">
+            <form action="./profile/store_comment" method="POST">
+				      <input name="compost[{{post.id}}]" class="form-control add-comment-input" placeholder="Add a comment..." type="text"><button type="submit" class="btn btn-info">Post Comment</button>
             </form>
               <ul class="comments-list">
                 {% for c in post.comments %}
 				          <li class="comment">
 				              <a class="pull-left" href="#">
-				                  <img class="avatar" src="img/Friends/guy-3.jpg" alt="avatar">
+				                  <img class="avatar" src="{{c.users.photo}}" alt="avatar">
 				              </a>
 				              <div class="comment-body">
 				                  <div class="comment-heading">
-				                      <h4 class="comment-user-name"><a href="#">Antony andrew lobghi</a></h4>
+				                      <h4 class="comment-user-name"><a href="#">{{c.users.first_name}} {{c.users.last_name}}</a></h4>
 				                      <h5 class="time">7 minutes ago</h5>
 				                  </div>
-				                  <p>This is a comment bla bla bla</p>
+				                  <p>{{c.message}}</p>
 				              </div>
 				          </li>
 				          {% endfor %}

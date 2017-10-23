@@ -36,12 +36,12 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="index.html">
-            
+
             <b>Clean-Note</b>
           </a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
-      <div class="col-md-5 col-sm-4">         
+      <div class="col-md-5 col-sm-4">
        <form class="navbar-form">
           <div class="form-group" style="display:inline;">
             <div class="input-group" style="display:table;">
@@ -52,7 +52,7 @@
             </div>
           </div>
         </form>
-      </div>        
+      </div>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="{{ path_for('profile') }}">
@@ -63,7 +63,7 @@
         <li class="active"><a href="{{ path_for('Homepage') }}"><i class="fa fa-bars"></i>&nbsp;Home</a></li>
         <li><a href="{{ path_for('messages') }}"><i class="fa fa-comments"></i></a></li>
         <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  Pages 
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">  Pages
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -76,14 +76,14 @@
               <li><a href="{{ path_for('edit_profile') }}">Edit profile</a></li>
               <li><a href="{{ path_for('notifications') }}">Notifications</a></li>
               <li><a href="{{ path_for('blank-cover') }}">Blank cover</a></li>
-              
+
               <li><a href="{{ path_for('registration_email') }}">Registration email</a></li>
               <li><a href="{{ path_for('grid_posts') }}">Grid posts</a></li>
               <li><a href="{{ path_for('error404') }}">Error 404</a></li>
               <li><a href="{{ path_for('error500') }}">Error 500</a></li>
             </ul>
         </li>
-        <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>       
+        <li><a href="#" class="nav-controller"><i class="fa fa-user"></i>Users</a></li>
       </ul>
         </div>
       </div>
@@ -95,15 +95,17 @@
       <h1 class="profile-name">Hillary McBrewk</h1>
       <p class="user-text">sharing awesome ideas with your friends, you can grow, grow fast</p>
     </div>
+                  {% block content %}
 
-                  {% block content %}{% endblock %}
+                  {% endblock %}
+
 
 
         <!-- Online users sidebar content-->
     <div class="chat-sidebar focus">
       <div class="list-group text-left">
-        <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p> 
-        <p class="text-center chat-title">Online users</p>  
+        <p class="text-center visible-xs"><a href="#" class="hide-chat">Hide</a></p>
+        <p class="text-center chat-title">Online users</p>
         <a href="{{ path_for('messages') }}" class="list-group-item">
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/guy-2.jpg" class="img-chat img-thumbnail">
@@ -163,21 +165,21 @@
           <i class="fa fa-check-circle connected-status"></i>
           <img src="img/Friends/child-1.jpg" class="img-chat img-thumbnail">
           <span class="chat-user-name">Dora ty bluekl</span>
-        </a>        
+        </a>
       </div>
     </div><!-- Online users sidebar content-->
-    
+
     <footer class="welcome-footer">
       <div class="container">
         <p>
           <div class="footer-links">
-            <a href="{{ path_for('messages') }}">Terms of Use</a> | 
-            <a href="{{ path_for('messages') }}">Privacy Policy</a> | 
-            <a href="{{ path_for('messages') }}">Developers</a> | 
-            <a href="{{ path_for('messages') }}">Contact</a> | 
+            <a href="{{ path_for('messages') }}">Terms of Use</a> |
+            <a href="{{ path_for('messages') }}">Privacy Policy</a> |
+            <a href="{{ path_for('messages') }}">Developers</a> |
+            <a href="{{ path_for('messages') }}">Contact</a> |
             <a href="{{ path_for('about') }}">About</a>
-          </div>   
-          Copyright &copy; Company - All rights reserved       
+          </div>
+          Copyright &copy; Company - All rights reserved
         </p>
       </div>
     </footer>

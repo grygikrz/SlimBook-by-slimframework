@@ -9,7 +9,7 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Message\ResponseInterface as Response;
 
 
-class HomeController
+class ProfileController
 {
     private $view;
     private $logger;
@@ -26,13 +26,13 @@ class HomeController
     {
 
         $id = 2;
-        $comAndPost = \App\Models\Posts::with('users.comments.users')where('user_id', '!=', $id)->orderBy('date', 'desc')->get();
+        $comAndPost = \App\Models\Posts::with('users.comments.users')->where('user_id', '=', $id)->orderBy('date', 'desc')->get();
 
         $messages = $this->flash->getMessages();
 
-        $this->logger->info("Home page action");
+        $this->logger->info("Profile page action");
 
-        $this->view->render($response, 'home.html', [
+        $this->view->render($response, 'profile.html', [
             'comAndPost' => $comAndPost,
             'messages' => $messages
         ]);
@@ -54,7 +54,7 @@ class HomeController
 
         $this->flash->addMessage('alert', 'Added new post on the wall');
 
-        return $response->withRedirect('../home');
+        return $response->withRedirect('../profile');
     }
     public function store_comment(Request $request,Response $response){
 
@@ -70,6 +70,6 @@ class HomeController
 
         $this->flash->addMessage('alert', 'Added new comment in to the post');
 
-        return $response->withRedirect('../home');
+        return $response->withRedirect('../profile');
     }
 }
