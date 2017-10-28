@@ -17,6 +17,9 @@ $app->get('/profile', 'App\Controllers\ProfileController:index')->setName('profi
 $app->post('/profile/store','App\Controllers\ProfileController:store');
 $app->post('/profile/store_comment','App\Controllers\ProfileController:store_comment');
 
+$app->get('/profile/edit_profile', 'App\Controllers\ProfileController:getdata')->setName('edit_profile');
+$app->post('/profile/edit_profile/store','App\Controllers\ProfileController:store_profil_data');
+
 $app->get('/recover_password', function ($request, $response, $args) {
     $this->logger->info("recover_password '/recover_password' route");
     return $this->view->render($response, 'recover_password.html', $args);
@@ -45,11 +48,6 @@ $app->get('/about', function ($request, $response, $args) {
     $this->logger->info("about '/about' route");
     return $this->view->render($response, 'about.html', $args);
 })->setName('about');
-
-$app->get('/edit_profile', function ($request, $response, $args) {
-    $this->logger->info("edit_profile '/edit_profile' route");
-    return $this->view->render($response, 'edit_profile.html', $args);
-})->setName('edit_profile');
 
 $app->get('/notifications', function ($request, $response, $args) {
     $this->logger->info("notifications '/notifications' route");

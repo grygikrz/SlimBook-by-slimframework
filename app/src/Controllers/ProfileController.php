@@ -39,6 +39,25 @@ class ProfileController
 
         return $response;
     }
+
+    public function getdata(Request $request, Response $response, $args)
+    {
+
+        $id = 2;
+        $user_data = \App\Models\Users::where('id', '=', $id)->get();
+
+        $messages = $this->flash->getMessages();
+
+        $this->logger->info("Profile page action");
+
+        $this->view->render($response, 'edit_profile.html', [
+            'user_data' => $user_data,
+            'messages' => $messages,
+            'data_index' => $request->getUri()->getBaseUrl()
+        ]);
+
+        return $response;
+    }
     public function store(Request $request,Response $response){
 
         $post = new \App\Models\Posts;
@@ -57,6 +76,23 @@ class ProfileController
         return $response->withRedirect('../profile');
     }
     public function store_comment(Request $request,Response $response){
+
+        $comment = new \App\Models\Comments;
+        $id = key($_POST['compost']);
+        $comment->user_id = 2;
+        $comment->post_id = $id;
+        $comment->message = $_POST['compost'][$id];
+
+        $comment->save();
+
+        \App\Models\Posts::where('id',$id)->increment('comments_count');
+
+        $this->flash->addMessage('alert', 'Added new comment in to the post');
+
+        return $response->withRedirect('../profile');
+    }
+
+    public function store_profil_data(Request $request,Response $response){
 
         $comment = new \App\Models\Comments;
         $id = key($_POST['compost']);
